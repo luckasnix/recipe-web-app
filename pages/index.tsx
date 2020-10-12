@@ -13,7 +13,7 @@ export default function Home({ recipes }) {
         <ul>
           {recipes.map(({ slug, name }: { slug: string, name: string }) => (
             <li key={slug}>
-              <Link href="/[recipe]" as={`/${slug}`}>
+              <Link href="recipes/[recipe]" as={`recipes/${slug}`}>
                 <a>{name}</a>
               </Link>
             </li>
