@@ -6,10 +6,11 @@ export default function Home({ recipes }) {
   return (
     <div>
       <Head>
-        <title>Find the best recipes ever</title>
+        <title>Find a recipe | Awesome Recipes</title>
+        <meta name='description' content='Find a recipe the easiest way'/>
       </Head>
       <main>
-        <h1>Select a recipe</h1>
+        <h1>Find a recipe</h1>
         <ul>
           {recipes.map(({ slug, name }: { slug: string, name: string }) => (
             <li key={slug}>

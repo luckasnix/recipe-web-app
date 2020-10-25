@@ -6,7 +6,7 @@ import { GetServerSideProps } from 'next'
 
 export default function RecipeTemplate({ recipe }) {
   return (
-    <div>
+    <>
       <Head>
         <title>{recipe.name} | Awesome Recipes</title>
         <meta name='description' content={recipe.description}/>
@@ -47,7 +47,7 @@ export default function RecipeTemplate({ recipe }) {
           ))}
         </ul>
       </main>
-    </div>
+    </>
   )
 }
 
