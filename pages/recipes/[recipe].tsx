@@ -33,7 +33,7 @@ export default function RecipeTemplate({ recipe }) {
         </Link>
         <h1>{recipe.name}</h1>
         <p>{recipe.description}</p>
-        <img src={recipe.image[0]} alt={`Photo of ${recipe.name}`} width={480} />
+        <img src={recipe.image[0]} alt={recipe.name} width={480} />
         <h2>Ingredients</h2>
         <ul>
           {recipe.ingredients.map((ingredient: string, idx: number) => (
