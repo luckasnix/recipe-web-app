@@ -8,6 +8,8 @@ export default function RecipeTemplate({ recipe }) {
   return (
     <div>
       <Head>
+        <title>{recipe.name} | Awesome Recipes</title>
+        <meta name='description' content={recipe.description}/>
         <script
           {...jsonLdScriptProps<Recipe>({
             '@context': 'https://schema.org',
