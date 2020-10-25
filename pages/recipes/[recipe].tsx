@@ -28,10 +28,23 @@ export default function RecipeTemplate({ recipe }) {
         />
       </Head>
       <main>
-        <Link href="/">
+        <Link href='/'>
           <a>Go to home</a>
         </Link>
         <h1>{recipe.name}</h1>
+        <p>{recipe.description}</p>
+        <h2>Ingredients</h2>
+        <ul>
+          {recipe.ingredients.map((ingredient: string, idx: number) => (
+            <li key={idx}>{ingredient}</li>
+          ))}
+        </ul>
+        <h2>Instructions</h2>
+        <ul>
+          {recipe.instructions.map((instruction: string, idx: number) => (
+            <li key={idx}>{instruction}</li>
+          ))}
+        </ul>
       </main>
     </div>
   )
