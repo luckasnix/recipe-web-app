@@ -21,14 +21,15 @@ export default function Home({ recipes }) {
           ))}
         </ul>
         <form name='contact' method='POST' data-netlify>
-          <div>
+          <input type='hidden' name='form-name' value='contact'/>
+          <p>
             <label htmlFor='name-input'>Name:</label>
             <input id='name-input' type='text' name='name' autoComplete='off'/>
-          </div>
-          <div>
+          </p>
+          <p>
             <label htmlFor='email-input'>Email:</label>
             <input id='email-input' type='email' name='email' autoComplete='off'/>
-          </div>
+          </p>
           <button type='submit'>Send</button>
         </form>
       </main>
