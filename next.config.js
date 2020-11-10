@@ -6,5 +6,6 @@ module.exports = {
         destination: '/api/sitemap'
       }
     ]
-  }
+  },
+  target: 'serverless'
 }
